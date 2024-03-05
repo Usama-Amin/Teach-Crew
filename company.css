@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: #c4bdbb;
+    padding: 10px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.logo img{
+    height: 50px;
+    width: 100px;
+}
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+}
+.nav li {
+    padding: 20px;
+    list-style-type: none;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+}
+.nav a:hover{
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
+}
+.hamber i{
+    color: white;
+    font-size: 20px;
+}
+.hamber {
+    display: none;
+}
+.overlay{
+    position: absolute;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 200px;
+    top: 0;
+    left: -200px;
+    transition: all .3s ease-in-out;
+}
+.over_back{
+    left: 0px;
+}
+.ovr{
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    width: 100%;
+
+}
+.ovr li{
+    list-style-type: none;
+    padding: 20px;
+    transition: all .3s ease-in-out;
+}
+.ovr li a{
+    text-decoration: none;
+    padding: 7px;
+    color: white;
+
+}
+.ovr li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+.remove i{
+    position: absolute;
+    left: 150px;
+    padding: 20px;
+}
+.rm:hover{
+    transform: rotate(360deg);
+    transition: all .9s ease-in-out;
+}
+.first-section{
+    width: 90%;
+    height: 80vh;
+    margin: 40px auto;
+    background-image: url("./img-1.jpg");
+    background-position: 90%;
+
+}
+.text-moto{
+    color: black;
+    font-size: 25px;
+    width: 45%;
+    height: 45%;
+    position: relative;
+    top: 35%;
+    padding: 8px;
+ }
+@media screen and (max-width: 567px) {
+    .head{
+        padding: 20px;
+    }
+    .hamber{
+        display: block;
+    }
+    .nav ul{
+        display: none;
+    }
+}
